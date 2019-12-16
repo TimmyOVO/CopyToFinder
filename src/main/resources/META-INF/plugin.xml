@@ -17,10 +17,8 @@
     </application-components>
 
     <change-notes><![CDATA[
-      <div>
-        First SNAPSHOT release
-        Home:https://github.com/TimmyOVO/CopyToFinder
-      </div>
+      1.1-SNAPSHOT CHANGELOGS:
+      fix a cicural issue when editor focused,copy was canceled.
     ]]>
     </change-notes>
 </idea-plugin>
