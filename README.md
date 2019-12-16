@@ -12,3 +12,7 @@
 * Install plugin
 * Copy file inside your ide using **⌘ + C** and using **⌘ + V** paste to your finder window.
 * Use ⌘ + ⌥ + V if do want cut file.
+
+# Libraries
+
+* **[NSPasteboardAPI](https://github.com/TimmyOVO/NSPasteboardAPI)**
