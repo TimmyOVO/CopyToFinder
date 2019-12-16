@@ -4,7 +4,7 @@
     <vendor email="skystardust961552712@gmail.com">TimmyOVO</vendor>
 
     <description><![CDATA[
-            Home:https://github.com/TimmyOVO/CopyToFinder 
+            Home:https://github.com/TimmyOVO/CopyToFinder
             Provides native pasteboard access in macintosh.
             Using this plugin you can copy file(Command + C) inside your ide,
             and paste(Command + V) that file into finder.
