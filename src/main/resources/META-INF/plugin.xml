@@ -1,0 +1,25 @@
+<idea-plugin>
+    <id>com.github.timmyovo.CopyToFinder</id>
+    <name>CopyToFinder</name>
+    <vendor email="skystardust961552712@gmail.com">TimmyOVO</vendor>
+
+    <description><![CDATA[
+            Provides native pasteboard access in macintosh.
+            Using this plugin you can copy file(Command + C) inside your ide,
+            and paste(Command + V) that file into finder.
+        ]]></description>
+
+    <application-components>
+        <component>
+            <implementation-class>com.github.timmyovo.KeyboardComponent</implementation-class>
+        </component>
+    </application-components>
+
+    <change-notes><![CDATA[
+      <div>
+        First SNAPSHOT release
+        Home:https://github.com/TimmyOVO/CopyToFinder
+      </div>
+    ]]>
+    </change-notes>
+</idea-plugin>
