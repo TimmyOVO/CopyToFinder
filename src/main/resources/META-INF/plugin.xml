@@ -16,5 +16,4 @@
         </component>
     </application-components>
 
-    <change-notes>1.1-SNAPSHOT CHANGELOGS: fix a cicural issue when editor focused,copy was canceled.</change-notes>
 </idea-plugin>

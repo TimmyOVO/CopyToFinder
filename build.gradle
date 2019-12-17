@@ -22,6 +22,6 @@ intellij {
 }
 patchPluginXml {
     changeNotes """
-      Add change notes here.<br>
-      <em>most HTML tags may be used</em>"""
+      1.1-SNAPSHOT.<br>
+      <em>fix a cicural issue when editor focused,copy was canceled.</em>"""
 }
