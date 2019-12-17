@@ -16,4 +16,7 @@
         </component>
     </application-components>
 
+    <actions>
+        <action id="$Copy" class="com.github.timmyovo.VanillaCopyActionListener" text="$Copy"/>
+    </actions>
 </idea-plugin>
