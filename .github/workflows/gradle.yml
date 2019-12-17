@@ -15,9 +15,9 @@ jobs:
         java-version: 1.8
     - name: Build with Gradle
       run: ./gradlew build
-    - name: Upload to release
-      uses: JasonEtco/upload-to-release@master
+    - name: Release
+      uses: softprops/action-gh-release@v1
       with:
-        args: build/libs/*.jar
+        files: build/libs/*.jar
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
