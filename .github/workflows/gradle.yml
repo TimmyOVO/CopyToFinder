@@ -15,7 +15,9 @@ jobs:
         java-version: 1.8
     - name: Build with Gradle
       run: ./gradlew build
-    - uses: actions/upload-artifact@v1
-      with:
-        name: CopyToFinder
-        path: build/libs/CopyToFinder-1.1-SNAPSHOT.jar
+    - name: Upload to release
+        uses: JasonEtco/upload-to-release@master
+        with:
+          args: build/libs/*.jar
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
