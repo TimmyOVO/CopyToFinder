@@ -11,7 +11,7 @@ import java.nio.file.Files;
 public class KeyboardComponent implements ApplicationComponent {
     @NotNull
     public String getComponentName() {
-        return "My On-Save Component";
+        return "Load-Native-Library-Component";
     }
 
     public void initComponent() {
