@@ -16,6 +16,8 @@
         </component>
     </application-components>
 
+    <depends>com.intellij.modules.lang</depends>
+
     <actions>
         <action id="$Copy" class="com.github.timmyovo.VanillaCopyActionListener" text="$Copy"/>
     </actions>
