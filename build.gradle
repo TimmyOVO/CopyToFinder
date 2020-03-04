@@ -5,7 +5,7 @@ plugins {
 }
 
 group 'com.github.timmyovo'
-version '1.4-SNAPSHOT'
+version '1.5-SNAPSHOT'
 
 sourceCompatibility = 1.8
 
@@ -23,8 +23,10 @@ intellij {
 }
 patchPluginXml {
     sinceBuild '171'
-    untilBuild '193'
+    untilBuild '201'
     changeNotes """
-      1.4-SNAPSHOT.<br>
-      <em>support clion and some minior bug fixs</em>"""
+      1.5-SNAPSHOT.<br>
+      <em>Fix plugin error when enabled</em>
+      <em>Now we support multi files copy and cut.</em>
+      """
 }

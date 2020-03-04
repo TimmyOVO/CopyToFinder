@@ -1,6 +1,7 @@
 package com.github.timmyovo;
 
 import com.intellij.openapi.components.ApplicationComponent;
+import com.intellij.openapi.ide.CopyPasteManager;
 import org.apache.commons.io.IOUtils;
 import org.jetbrains.annotations.NotNull;
 
@@ -23,6 +24,8 @@ public class KeyboardComponent implements ApplicationComponent {
         } catch (IOException e) {
             e.printStackTrace();
         }
+
+        CopyPasteManager.getInstance().addContentChangedListener(new CopyPasteListener());
 
 //        IdeEventQueue ideEventQueue = IdeEventQueue.getInstance();
 //        ideEventQueue.addPostEventListener(event -> {
