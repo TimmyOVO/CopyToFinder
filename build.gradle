@@ -13,8 +13,16 @@ repositories {
     mavenCentral()
 }
 
+shadowJar {
+    classifier ''
+}
+
 dependencies {
     compile group: 'commons-io', name: 'commons-io', version: '2.6'
+}
+
+artifacts {
+    archives shadowJar
 }
 
 // See https://github.com/JetBrains/gradle-intellij-plugin/
