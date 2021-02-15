@@ -1,7 +1,7 @@
 plugins {
     id 'com.github.johnrengelman.shadow' version '5.2.0'
     id 'java'
-    id 'org.jetbrains.intellij' version '0.4.15'
+    id 'org.jetbrains.intellij' version '0.6.5'
 }
 
 group 'com.github.timmyovo'
@@ -31,6 +31,7 @@ intellij {
 }
 patchPluginXml {
     sinceBuild '171'
+    untilBuild ''
     changeNotes """
       1.7-SNAPSHOT.<br>
       <em>Fix issue: files not being removed after cut. </em>
