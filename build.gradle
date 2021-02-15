@@ -5,7 +5,7 @@ plugins {
 }
 
 group 'com.github.timmyovo'
-version '1.6-SNAPSHOT'
+version '1.7-SNAPSHOT'
 
 sourceCompatibility = 1.8
 
@@ -24,7 +24,7 @@ intellij {
 patchPluginXml {
     sinceBuild '171'
     changeNotes """
-      1.6-SNAPSHOT.<br>
-      <em>Removed untilBuild tag. </em>
+      1.7-SNAPSHOT.<br>
+      <em>Fix issue: files not being removed after cut. </em>
       """
 }

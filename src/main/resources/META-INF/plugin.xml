@@ -12,13 +12,10 @@
 
     <application-components>
         <component>
-            <implementation-class>com.github.timmyovo.KeyboardComponent</implementation-class>
+            <implementation-class>com.github.timmyovo.NativeLibraryLoaderComponent</implementation-class>
         </component>
     </application-components>
 
     <depends>com.intellij.modules.lang</depends>
 
-<!--    <actions>-->
-<!--        <action id="$Copy" class="com.github.timmyovo.VanillaCopyActionListener" text="$Copy"/>-->
-<!--    </actions>-->
 </idea-plugin>
