@@ -9,16 +9,22 @@ version '1.7-SNAPSHOT'
 
 sourceCompatibility = 1.8
 
+configurations {
+    shadow
+    compile.extendsFrom shadow
+}
+
 repositories {
     mavenCentral()
 }
 
 shadowJar {
     classifier ''
+    configurations = [project.configurations.shadow]
 }
 
 dependencies {
-    compile group: 'commons-io', name: 'commons-io', version: '2.6'
+    shadow group: 'commons-io', name: 'commons-io', version: '2.6'
 }
 
 artifacts {
