@@ -1,13 +1,13 @@
 plugins {
     id 'com.github.johnrengelman.shadow' version '5.2.0'
     id 'java'
-    id 'org.jetbrains.intellij' version '0.6.5'
+    id 'org.jetbrains.intellij' version '1.14.2'
 }
 
 group 'com.github.timmyovo'
 version '1.7-SNAPSHOT'
 
-sourceCompatibility = 1.8
+sourceCompatibility = 17
 
 configurations {
     shadow
@@ -24,7 +24,7 @@ shadowJar {
 }
 
 dependencies {
-    shadow group: 'commons-io', name: 'commons-io', version: '2.6'
+    shadow group: 'commons-io', name: 'commons-io', version: '2.7'
 }
 
 artifacts {
@@ -33,13 +33,15 @@ artifacts {
 
 // See https://github.com/JetBrains/gradle-intellij-plugin/
 intellij {
-    version '2019.2.3'
+    pluginName = "CopyToFinder"
+    version = "1.8-SNAPSHOT"
+    version = '2019.3.3'
 }
 patchPluginXml {
-    sinceBuild '171'
-    untilBuild ''
-    changeNotes """
-      1.7-SNAPSHOT.<br>
-      <em>Fix issue: files not being removed after cut. </em>
+    sinceBuild  = '171'
+    untilBuild = ''
+    changeNotes = """
+      1.8-SNAPSHOT.<br>
+      <em>M1/M2 processor support added.</em>
       """
 }
