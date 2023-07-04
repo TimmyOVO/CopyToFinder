@@ -1,13 +1,14 @@
 plugins {
     id 'com.github.johnrengelman.shadow' version '5.2.0'
     id 'java'
-    id 'org.jetbrains.intellij' version '1.14.2'
+    id 'org.jetbrains.intellij' version '0.6.5'
 }
 
 group 'com.github.timmyovo'
-version '1.8-SNAPSHOT'
+version '1.9-SNAPSHOT'
 
-sourceCompatibility = 17
+sourceCompatibility = 8
+targetCompatibility = 8
 
 configurations {
     shadow
@@ -34,14 +35,14 @@ artifacts {
 // See https://github.com/JetBrains/gradle-intellij-plugin/
 intellij {
     pluginName = "CopyToFinder"
-    version = "1.8-SNAPSHOT"
-    version = '2023.1.3'
+    version = "1.9-SNAPSHOT"
+    version = '2019.2.3'
 }
 patchPluginXml {
     sinceBuild  = '171'
     untilBuild = ''
     changeNotes = """
-      1.8-SNAPSHOT.<br>
-      <em>M1/M2 processor support added.</em>
+      1.9-SNAPSHOT.<br>
+      <em>Fix compatibility issues.</em>
       """
 }
